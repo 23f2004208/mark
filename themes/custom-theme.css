@@ -1,0 +1,159 @@
+/* @theme custom-docs */
+
+@import 'default';
+
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #7c3aed;
+  --color-accent: #059669;
+  --color-background: #ffffff;
+  --color-foreground: #1f2937;
+  --color-code-bg: #f3f4f6;
+}
+
+section {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 50px 80px;
+}
+
+/* Header styles */
+h1 {
+  color: var(--color-primary);
+  border-bottom: 3px solid var(--color-primary);
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: var(--color-secondary);
+  border-left: 5px solid var(--color-secondary);
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+h3 {
+  color: var(--color-accent);
+}
+
+/* Code block styling */
+pre {
+  background-color: var(--color-code-bg);
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 4px solid var(--color-primary);
+}
+
+code {
+  background-color: var(--color-code-bg);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* List styling */
+ul, ol {
+  line-height: 1.8;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Emphasis */
+strong {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+em {
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+/* Page numbers */
+section::after {
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Title slide specific styling */
+section.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: white;
+}
+
+section.title h1 {
+  color: white;
+  border-bottom: none;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+section.title p {
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+
+/* Math equations */
+.katex {
+  font-size: 1.1em;
+}
+
+.katex-display {
+  margin: 20px 0;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+th {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 5px solid var(--color-accent);
+  padding-left: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #4b5563;
+}
