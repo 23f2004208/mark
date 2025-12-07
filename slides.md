@@ -1,10 +1,12 @@
 ---
 marp: true
-theme: custom-docs
+theme: default
 paginate: true
+math: katex
 header: 'Product Documentation'
 footer: '23f2004208@ds.study.iitm.ac.in'
 style: |
+  @import url('themes/custom-theme.css');
   section.title::after {
     content: '';
   }
