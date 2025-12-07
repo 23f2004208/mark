@@ -4,7 +4,12 @@ theme: custom-docs
 paginate: true
 header: 'Product Documentation'
 footer: '23f2004208@ds.study.iitm.ac.in'
+backgroundImage: url('https://i.imgur.com/XYZ1234.jpg')
 style: |
+  section {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2393c5fd;stop-opacity:0.3"/><stop offset="50%" style="stop-color:%23fef3c7;stop-opacity:0.3"/><stop offset="100%" style="stop-color:%23fed7aa;stop-opacity:0.3"/></linearGradient></defs><rect width="1920" height="1080" fill="url(%23g1)"/></svg>');
+    background-size: cover;
+  }
   section.title::after {
     content: '';
   }
@@ -30,9 +35,6 @@ Email: 23f2004208@ds.study.iitm.ac.in
 5. **Deployment** - Best Practices
 
 ---
-
-<!-- backgroundImage: url('images/background.svg') -->
-<!-- _color: white -->
 
 # System Architecture Overview
 
@@ -223,9 +225,6 @@ jobs:
 ```
 
 ---
-
-<!-- backgroundImage: url('images/performance-bg.svg') -->
-<!-- _color: white -->
 
 # Performance Benchmarks
 
