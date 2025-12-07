@@ -31,7 +31,7 @@ Email: 23f2004208@ds.study.iitm.ac.in
 
 ---
 
-<!-- backgroundImage: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920') -->
+<!-- backgroundImage: url('images/background.svg') -->
 <!-- _color: white -->
 
 # System Architecture Overview
@@ -224,7 +224,7 @@ jobs:
 
 ---
 
-<!-- backgroundImage: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920') -->
+<!-- backgroundImage: url('images/performance-bg.svg') -->
 <!-- _color: white -->
 
 # Performance Benchmarks
